@@ -6,11 +6,12 @@ html {
 
 body {
   height: 100vh;
+  padding-top: 1px;
 }
 
 .container {
   display: grid;
-  grid-template: 13% 1fr / max(200px, 20%) 1fr;
+  grid-template: 20% 1fr / max(200px, 20%) 1fr;
   height: 100%;
 }
 
@@ -24,13 +25,25 @@ body {
   background-color: white;
   grid-column: 2;
   display: grid;
-  grid-template-rows: 50% 1fr;
+  grid-template-rows: 1fr 50%;
 }
 
 .top-bar-top {
+  grid-row: 1;
   display: grid;
   grid-template-columns: 10% 40% 20% 10% 1fr;
   gap: 15px;
+}
+
+.top-bar-bottom {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 15% 50% repeat(3, 1fr);
+  /* grid-template-rows: 50% 1fr; */
+}
+
+.top-bar-bottom p {
+  margin: 0;
 }
 
 
