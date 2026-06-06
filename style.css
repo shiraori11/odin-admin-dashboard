@@ -11,7 +11,7 @@ body {
 
 .container {
   display: grid;
-  grid-template: 20% 1fr / max(200px, 20%) 1fr;
+  grid-template: 15% 1fr / max(200px, 20%) 1fr;
   height: 100%;
 }
 
@@ -19,6 +19,17 @@ body {
   background-color: darkseagreen;
   grid-column: 1;
   grid-row: span 2;
+  display: grid;
+  grid-template-rows: 15% repeat(6, 1fr) 5% repeat(3, 1fr) 40%;
+  grid-template-columns: 30% 1fr;
+}
+
+.sidebar li {
+  grid-column: 2;
+}
+
+.sidebar-icon {
+  grid-column: 1;
 }
 
 .top-bar {
@@ -62,7 +73,7 @@ body {
 
 .project-container {
   display: grid;
-  padding: 10px;
+  padding: 0px 10px;
   gap: 15px;
   grid-template: 150px / 50% 1fr;
   grid-auto-rows: 150px;
@@ -70,11 +81,25 @@ body {
 }
 
 .announcement-container {
-  margin: -3% 5% 5% 5%;
+  margin: 0 5% 5% 5%;
   height: 80%;
-  width: 90%;
+  width: 80%;
   display: grid;
   background-color: white;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr;
+  padding: 10px 15px;
+}
+
+.announcement-container p {
+  margin: 0;
+}
+
+.announcement-container div {
+  margin: 10px
+}
+
+.announcement-container hr {
+  width: 90%;
 }
 
 .trending-container {
