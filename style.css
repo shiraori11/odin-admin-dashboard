@@ -11,7 +11,7 @@ body {
 
 .container {
   display: grid;
-  grid-template: 15% 1fr / max(200px, 20%) 1fr;
+  grid-template: 15% 1fr / max(120px, 18%) 1fr;
   height: 100%;
 }
 
@@ -22,14 +22,24 @@ body {
   display: grid;
   grid-template-rows: 15% repeat(6, 1fr) 5% repeat(3, 1fr) 40%;
   grid-template-columns: 30% 1fr;
+  column-gap: 15px;
 }
 
 .sidebar li {
   grid-column: 2;
+  margin: 0;
+  align-self: center;
+  list-style-type: none;
+}
+
+.sidebar a {
+  text-decoration: none;
 }
 
 .sidebar-icon {
   grid-column: 1;
+  height: 35px;
+  justify-self: self-end;
 }
 
 .top-bar {
