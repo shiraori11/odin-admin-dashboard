@@ -16,7 +16,7 @@ body {
 }
 
 .sidebar {
-  background-color: skyblue;
+  background-color: rgba(0, 0, 0, 80%);
   grid-column: 1;
   grid-row: span 2;
   display: grid;
